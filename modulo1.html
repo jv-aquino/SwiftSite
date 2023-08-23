@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Módulo 1: Introdução à Swift</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">SWIFT.GPT</a></h1>
+        <nav>
+            <ul>
+                <li><a href="modulo1.html">MÓDULO I</a></li>
+                <li><a href="modulo2.html">MÓDULO II</a></li>
+                <li><a href="modulo3.html">MÓDULO III</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="module-page">
+        <section class="module-content">
+            <h2>MÓDULO I: INICIANTE</h2><br>
+            <p>Instalação e Estruturas básicas</p><br>
+            <h3 style="text-align: justify;">HISTÓRICO</h3><br>
+            <p style="text-align: justify;"> A Swift foi criada pela Apple como uma alternativa mais moderna e segura à linguagem Objective-C, que era a principal linguagem usada para desenvolver aplicativos iOS e macOS. Ela foi projetada para ser mais rápida, mais legível e menos propensa a erros, com o objetivo de melhorar a produtividade dos desenvolvedores.</p><br><hr><br>
+            <h3 style="text-align: justify;">CARACTERÍSTICAS</h3><br>
+            <p style="text-align: justify;">
+                ● SINTAXE: A sintaxe da Swift é mais clara e legível, tornando o código mais fácil de entender e manter. <br><br>
+                ● SEGURANÇA: A Swift foi projetada com foco em evitar erros comuns de programação, como acessos inválidos à memória e problemas de tipos. <br><br>
+                ● INTERF. DE TIPOS: A linguagem é capaz de inferir automaticamente os tipos das variáveis e constantes, tornando a declaração de variáveis mais concisa. <br><br>           
+                ● OPCIONAIS: Opcionais são uma parte fundamental da Swift, permitindo tratar valores nulos de maneira mais segura. <br><br>
+                ● MANIPULAÇÃO DE MEMÓRIA: A Swift utiliza a contagem de referência e a coleta de lixo para gerenciar a memória, facilitando a vida dos desenvolvedores. <br><br>
+                ● PLAYGROUNDS: Os Playgrounds da Swift oferecem um ambiente interativo para testar código rapidamente e visualizar resultados em tempo real.
+            </p><br><hr><br>
+            <h3 style="text-align: justify;">ESTRUTUTAS DE CONTROLE</h3><br>
+            <p style="text-align: justify;">A Swift suporta estruturas de controle familiares, como condicionais (if, else) e loops (for, while). <br><br>
+
+                let idade = 18 <br><br>
+                if idade >= 18 { <br>
+                    print("Você é maior de idade.") <br>
+                } else { <br>
+                    print("Você é menor de idade.") <br>
+                } <br><br>
+                
+                for i in 1...5 { <br>
+                    print(i) <br>
+                } <br><br>
+                
+                var contador = 0 <br>
+                while contador < 5 { <br>
+                    print("Contador: \(contador)") <br>
+                    contador += 1 <br>
+                }
+                </p><br><hr><br>
+            <h3 style="text-align: justify;">VARIÁVEIS E CONSTANTES</h3><br>
+            <p style="text-align: justify;">Na Swift, você pode declarar variáveis usando `var` e constantes usando `let`. Além disso, a inferência de tipos torna a declaração de variáveis mais simples. <br><br>
+
+                var nome = "João"<br>
+                let pi = 3.14159 <br><br>
+                
+                nome = "Maria" // Variável pode ser modificada <br>
+                // pi = 3.14   // Isso resultará em erro, pois 'pi' é uma constante br
+                </p><br><hr><br>
+            <h3 style="text-align: justify;">OPERADORES</h3><br>
+            <p style="text-align: justify;">A Swift suporta uma variedade de operadores para realizar operações aritméticas, lógicas e outras. <br><br>
+
+                let soma = 5 + 3 <br>
+                let subtracao = 10 - 4 <br>
+                let multiplicacao = 2 * 6 <br>
+                let divisao = 8 / 2 <br><br>
+                
+                let resultado = (soma + subtracao) * 2 <br><br>
+                
+                let verdadeiro = true <br>
+                let falso = !verdadeiro <br>
+                </p><br><hr><br>
+            <h3 style="text-align: justify;">TIPOS DE DADOS</h3><br>
+            <p style="text-align: justify;">A Swift possui tipos de dados básicos, como Inteiros, Pontos Flutuantes, Booleanos e Strings, além da capacidade de criar tipos personalizados. <br><br>
+
+                let inteiro: Int = 42 <br>
+                let pontoFlutuante: Double = 3.14 <br>
+                let booleano: Bool = true <br>
+                let texto: String = "Olá, Swift!" <br><br>
+                
+                // Tipos personalizados <br>
+                struct Pessoa { <br>
+                    var nome: String <br>
+                    var idade: Int <br>
+                } <br><br>
+                
+                let pessoa = Pessoa(nome: "Ana", idade: 25) <br>
+                print("Nome: \(pessoa.nome), Idade: \(pessoa.idade)")
+                </p><br><hr><br>
+            <h3 style="text-align: justify;">FUNÇÕES</h3><br>
+            <p style="text-align: justify;">As funções são blocos de código que podem ser reutilizados para executar tarefas específicas. <br><br>
+
+                func saudacao(nome: String) -> String { <br>
+                    return "Olá, \(nome)!" <br>
+                } <br><br>
+                
+                let cumprimento = saudacao(nome: "Carlos") <br>
+                print(cumprimento) <br>
+                </p><br><hr><br>
+            <h3 style="text-align: justify;">ARRAYS</h3><br>
+            <p style="text-align: justify;">Arrays são coleções ordenadas de elementos do mesmo tipo. <br><br>
+
+                var numeros = [1, 2, 3, 4, 5] <br><br>
+                
+                numeros.append(6) <br>
+                numeros.insert(0, at: 0) <br>
+                numeros.remove(at: 3) <br><br>
+                
+                for numero in numeros { <br>
+                    print(numero) <br>
+                }
+                </p><br>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Projeto de LP - Miguel, Theo e Aquino</p>
+    </footer>
+</body>
+</html>
